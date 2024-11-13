@@ -38,8 +38,10 @@ public class Adicionar extends javax.swing.JFrame {
         btnSalvar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtReceita = new javax.swing.JTextArea();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Adicionar Receita");
         getContentPane().setLayout(null);
 
         txtNomeReceita.addActionListener(new java.awt.event.ActionListener() {
@@ -48,15 +50,21 @@ public class Adicionar extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtNomeReceita);
-        txtNomeReceita.setBounds(120, 40, 250, 60);
+        txtNomeReceita.setBounds(120, 40, 270, 50);
 
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nome da receita:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(20, 60, 110, 30);
+        jLabel1.setBounds(10, 40, 100, 40);
 
-        jLabel2.setText("descrição:");
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Descrição:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(40, 140, 60, 16);
+        jLabel2.setBounds(30, 110, 80, 40);
 
         btnSalvar.setText("Salvar");
         btnSalvar.addActionListener(new java.awt.event.ActionListener() {
@@ -65,16 +73,20 @@ public class Adicionar extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSalvar);
-        btnSalvar.setBounds(180, 420, 150, 60);
+        btnSalvar.setBounds(120, 400, 270, 40);
 
         txtReceita.setColumns(20);
         txtReceita.setRows(5);
         jScrollPane1.setViewportView(txtReceita);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(120, 120, 250, 280);
+        jScrollPane1.setBounds(120, 110, 270, 280);
 
-        setSize(new java.awt.Dimension(489, 522));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lovely-hand-drawn-coffee-seamless-pattern-cute-doodle-background-great-for-banners-wallpapers-wrapping-fabrics-vector-design-2JDJ309.jpg"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(-110, -190, 980, 690);
+
+        setSize(new java.awt.Dimension(501, 528));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -154,6 +166,7 @@ public class Adicionar extends javax.swing.JFrame {
     private javax.swing.JButton btnSalvar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtNomeReceita;
     private javax.swing.JTextArea txtReceita;

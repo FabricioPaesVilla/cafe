@@ -42,8 +42,10 @@ public class Ajuda extends javax.swing.JFrame {
         txtDescricao = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
         btnEnviar = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Ajuda");
         getContentPane().setLayout(null);
         getContentPane().add(txtNome);
         txtNome.setBounds(170, 40, 240, 50);
@@ -58,13 +60,18 @@ public class Ajuda extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(120, 120, 90, 30);
 
-        cmbProblema.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmbProblema.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Reclamações ", "Dúvidas", "Sugestões ", "Comentários" }));
+        cmbProblema.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbProblemaActionPerformed(evt);
+            }
+        });
         getContentPane().add(cmbProblema);
         cmbProblema.setBounds(170, 180, 240, 60);
 
         jLabel3.setText("Qual o seu problema:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(50, 190, 130, 30);
+        jLabel3.setBounds(40, 190, 150, 40);
 
         txtDescricao.setColumns(20);
         txtDescricao.setRows(5);
@@ -75,7 +82,7 @@ public class Ajuda extends javax.swing.JFrame {
 
         jLabel4.setText("Descrição do seu problema:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 280, 160, 30);
+        jLabel4.setBounds(10, 250, 160, 80);
 
         btnEnviar.setText("Enviar");
         btnEnviar.addActionListener(new java.awt.event.ActionListener() {
@@ -84,9 +91,13 @@ public class Ajuda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnEnviar);
-        btnEnviar.setBounds(210, 470, 160, 60);
+        btnEnviar.setBounds(200, 450, 180, 60);
 
-        setSize(new java.awt.Dimension(567, 576));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1352183.png"))); // NOI18N
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(-1220, -10, 1790, 670);
+
+        setSize(new java.awt.Dimension(530, 576));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -125,6 +136,10 @@ public class Ajuda extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_btnEnviarActionPerformed
+
+    private void cmbProblemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbProblemaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbProblemaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,6 +184,7 @@ public class Ajuda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea txtDescricao;
     private javax.swing.JTextField txtEmail;

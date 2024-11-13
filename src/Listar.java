@@ -63,16 +63,15 @@ public class Listar extends javax.swing.JFrame {
         txtReceita = new javax.swing.JTextField();
         btnBuscar = new javax.swing.JToggleButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Receitas");
         getContentPane().setLayout(null);
 
         tblReceitas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null},
-                {null},
-                {null},
-                {null}
+
             },
             new String [] {
                 "receitas"
@@ -81,24 +80,28 @@ public class Listar extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tblReceitas);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(120, 130, 270, 280);
+        jScrollPane1.setBounds(110, 130, 270, 280);
         getContentPane().add(txtReceita);
-        txtReceita.setBounds(120, 60, 170, 50);
+        txtReceita.setBounds(120, 70, 200, 40);
 
-        btnBuscar.setText("Buscar");
+        btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/procurar.png"))); // NOI18N
         btnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBuscarActionPerformed(evt);
             }
         });
         getContentPane().add(btnBuscar);
-        btnBuscar.setBounds(290, 60, 120, 50);
+        btnBuscar.setBounds(320, 70, 50, 40);
 
         jLabel1.setText("Receita:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(60, 70, 60, 20);
+        jLabel1.setBounds(70, 70, 90, 50);
 
-        setSize(new java.awt.Dimension(543, 505));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1000_F_312194478_3gfoLemMP4xcsEOk31Gtn69qTSDmY6hS.jpg"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(-10, -220, 510, 1400);
+
+        setSize(new java.awt.Dimension(482, 505));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -179,6 +182,7 @@ public class Listar extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton btnBuscar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblReceitas;
     private javax.swing.JTextField txtReceita;

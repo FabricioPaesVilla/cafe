@@ -25,8 +25,30 @@ public class Empresas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        listEmpresas = new javax.swing.JList<>();
+        jLabel2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Empresas de Café");
+        setBackground(new java.awt.Color(102, 51, 0));
         getContentPane().setLayout(null);
+
+        listEmpresas.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        listEmpresas.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
+        listEmpresas.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Estado:         Nome:", "CE                 GRUPO TRES CORACOES", "SP                 JACOBS DOUWE EGBERTS BR COM. DE CAFES LTDA", "SP                 MELITTA DO BRASIL IND. E COM. LTDA.", "SE                 INDS. ALIMENTS. MARATA LTDA.", "PB                 SAO BRAZ S/A IND. E COM. DE ALIMENTOS S.A", "MG                COOP. REGIONAL DE CAFEICULTORES EM GUAXUPE LTDA. – COOXUPE", "SP                 CAFE PACAEMBU LTDA.", "GO                CAFE RANCHEIRO AGRO INDL. LTDA.", "MG                FOODS IND. E COM. LTDA", "MG                CAFE BOM DIA LTDA.", " ", "Essas são algumas empresas que fabricam café no Brasil", " ", " ", " " };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(listEmpresas);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(90, 60, 590, 300);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/3coracoes_aquisicao.jpg"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(-50, 0, 790, 450);
 
         setSize(new java.awt.Dimension(754, 453));
         setLocationRelativeTo(null);
@@ -68,5 +90,8 @@ public class Empresas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JList<String> listEmpresas;
     // End of variables declaration//GEN-END:variables
 }

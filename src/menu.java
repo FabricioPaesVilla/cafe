@@ -59,6 +59,7 @@ public class Menu extends javax.swing.JFrame {
         jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Menu Café");
         setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(null);
 
@@ -69,13 +70,14 @@ public class Menu extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/café - Copia.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 960, 600);
+        jLabel1.setBounds(0, 0, 970, 600);
 
         jMenuBar1.setBackground(new java.awt.Color(0, 0, 0));
         jMenuBar1.setBorder(null);
 
         mnuCafe.setText("Café");
 
+        itmTiposCafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/graos-de-cafe (1).png"))); // NOI18N
         itmTiposCafe.setText("Tipos");
         itmTiposCafe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,9 +86,16 @@ public class Menu extends javax.swing.JFrame {
         });
         mnuCafe.add(itmTiposCafe);
 
+        itmQualidadeCafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/xicara-de-cafe.png"))); // NOI18N
         itmQualidadeCafe.setText("Qualidade");
+        itmQualidadeCafe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmQualidadeCafeActionPerformed(evt);
+            }
+        });
         mnuCafe.add(itmQualidadeCafe);
 
+        itmEmpreasCafe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/companhia.png"))); // NOI18N
         itmEmpreasCafe.setText("Empresas");
         itmEmpreasCafe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,6 +108,7 @@ public class Menu extends javax.swing.JFrame {
 
         mnuReceitas.setText("Receitas");
 
+        itmAdicionarReceitas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/adicionar.png"))); // NOI18N
         itmAdicionarReceitas.setText("Adicionar ");
         itmAdicionarReceitas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,6 +118,7 @@ public class Menu extends javax.swing.JFrame {
         mnuReceitas.add(itmAdicionarReceitas);
         mnuReceitas.add(jSeparator1);
 
+        itmListarReceitas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tarefa.png"))); // NOI18N
         itmListarReceitas.setText("Listar");
         itmListarReceitas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,6 +127,7 @@ public class Menu extends javax.swing.JFrame {
         });
         mnuReceitas.add(itmListarReceitas);
 
+        itmBuscarReceitas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/procurar.png"))); // NOI18N
         itmBuscarReceitas.setText("Buscar");
         itmBuscarReceitas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +157,7 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void itmTiposCafeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmTiposCafeActionPerformed
-        // TODO add your handling code here:
+        new Tipo().setVisible(true);
     }//GEN-LAST:event_itmTiposCafeActionPerformed
 
     private void itmListarReceitasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmListarReceitasActionPerformed
@@ -153,7 +165,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_itmListarReceitasActionPerformed
 
     private void itmEmpreasCafeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmEmpreasCafeActionPerformed
-        // TODO add your handling code here:
+        new Empresas().setVisible(true);
     }//GEN-LAST:event_itmEmpreasCafeActionPerformed
 
     private void itmBuscarReceitasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmBuscarReceitasActionPerformed
@@ -190,6 +202,10 @@ public class Menu extends javax.swing.JFrame {
     private void itmAtendimentoMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_itmAtendimentoMenuSelected
         new Ajuda().setVisible(true);
     }//GEN-LAST:event_itmAtendimentoMenuSelected
+
+    private void itmQualidadeCafeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmQualidadeCafeActionPerformed
+        new Qualidade().setVisible(true);
+    }//GEN-LAST:event_itmQualidadeCafeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -278,3 +294,4 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenu mnuReceitas;
     // End of variables declaration//GEN-END:variables
 }
+

@@ -25,18 +25,29 @@ public class Qualidade extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        jScrollPane1 = new javax.swing.JScrollPane();
+        lstQualidade = new javax.swing.JList<>();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 797, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 456, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Qualidade de um café");
+        getContentPane().setLayout(null);
+
+        lstQualidade.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 51, 0), 3, true));
+        lstQualidade.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        lstQualidade.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Para saber se o café é de qualidade tem três meios de analisar:", " ", "-> Primeiro: pelo seu aroma, existe vários tipos de grãos de café pelo mundo ", "e quando estão sendo moídos ou sendo feitos cada um tem um aroma diferente;", "-> Segundo: pelo paladar, os cafés normalmente são amargos, só que uns tem esse", "amargor mais forte e outros ele é mais suave, e vai de cada pessoa escolher o seu ", "gosto preferido;", "-> E terceiro e o mais importante: pela forma de fazer a torra ou saber como ele foi ", "feito. A torra do café é um processo crucial no desenvolvimento do sabor, aroma ", "e cor dos grãos de café. Durante a torra, os grãos são expostos a altas temperaturas, ", "geralmente entre 180°C e 240°C, por um período que varia de acordo com o tipo de café e ", "o resultado desejado. A torra pode ser clara, média ou escura, cada uma produzindo ", "características de sabor e aroma distintas." };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(lstQualidade);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(70, 40, 650, 340);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/20536292.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-1040, -160, 1940, 780);
 
         setSize(new java.awt.Dimension(813, 464));
         setLocationRelativeTo(null);
@@ -78,5 +89,8 @@ public class Qualidade extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JList<String> lstQualidade;
     // End of variables declaration//GEN-END:variables
 }

@@ -25,10 +25,31 @@ public class Tipo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        listTiposDeCafes = new javax.swing.JList<>();
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Tipos de café");
         getContentPane().setLayout(null);
 
-        setSize(new java.awt.Dimension(769, 469));
+        listTiposDeCafes.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 51, 0), 3, true));
+        listTiposDeCafes.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        listTiposDeCafes.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Existem 10 tipos de grãos de café mais utilizado no Brasil:", " ", "1 - Geisha: café mais adocicado com aroma floral;", "2 - Bourbon: grão considerado de melhor qualidade e tem gosto de avelã;", "3 - Acaiá: café considerado raro e tem sabor suave;", "4 - Catuaí: vem de uma junção de outros grãos de café, vária entre o suave", "e o amargo;", "5 - Icatu: tem gosto de chocolate e aroma de amêndoas;", "6 - Catucaí: produz um sabor doce quando vira bebida;", "7 - Mundo Novo: sabor intenso e também vem de um cruzamento de diferentes", "grãos de café;", "8 - Caturra: esse café tem um sabor forte parecido com chocolates amargos;", "9 - Kona: considerado o melhor café dessa lista e também o mais caro;", "10 - Robusta: tem o sabor mais amargo e vem de uma planta resistente, por isso", "o nome robusta." };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(listTiposDeCafes);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(40, 40, 550, 370);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tipos-de-cafe-1024x683.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-80, -20, 750, 500);
+
+        setSize(new java.awt.Dimension(671, 505));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -69,5 +90,8 @@ public class Tipo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JList<String> listTiposDeCafes;
     // End of variables declaration//GEN-END:variables
 }

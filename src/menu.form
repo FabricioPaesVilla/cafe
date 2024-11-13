@@ -46,6 +46,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="itmTiposCafe">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/graos-de-cafe (1).png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Tipos"/>
               </Properties>
               <Events>
@@ -54,11 +57,20 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itmQualidadeCafe">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/xicara-de-cafe.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Qualidade"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itmQualidadeCafeActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itmEmpreasCafe">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/companhia.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Empresas"/>
               </Properties>
               <Events>
@@ -74,6 +86,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="itmAdicionarReceitas">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/adicionar.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Adicionar "/>
               </Properties>
               <Events>
@@ -84,6 +99,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itmListarReceitas">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/tarefa.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Listar"/>
               </Properties>
               <Events>
@@ -92,6 +110,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itmBuscarReceitas">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/procurar.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Buscar"/>
               </Properties>
               <Events>
@@ -113,6 +134,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Menu Caf&#xe9;"/>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="0" green="0" red="0" type="rgb"/>
     </Property>
@@ -161,7 +183,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="960" height="600"/>
+          <AbsoluteConstraints x="0" y="0" width="970" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
